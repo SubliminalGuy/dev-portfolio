@@ -1,4 +1,12 @@
+import { Link, useSearchParams } from "react-router-dom";
+
 export default function Projects() {
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const typeFilter = searchParams.get("type");
+
+  console.log("typeFilter", typeFilter);
+
   const projects = [
     {
       projectId: "1",
@@ -12,7 +20,7 @@ export default function Projects() {
       projectId: "2",
       projectName: "Adults in the Zoom",
       projectDescription: "A Svelte based Blog for political memoirs",
-      projectLink: "https://subguy-crypto-dashboard.netlify.app/",
+      projectLink: "https://www.adults-in-the-zoom.de/",
       projectImage: "..//images/a-in-the-zoom.png",
       projectTags: ["svelte", "firebase"],
     },
@@ -34,18 +42,34 @@ export default function Projects() {
     },
   ];
 
-  const projectElements = projects.map((el) => (
+  function handleFilterChange(key, value) {
+    console.log(searchParams);
+    setSearchParams((prevParams) => {
+      if (value === null) {
+        prevParams.delete(key);
+      } else {
+        prevParams.set(key, value);
+      }
+      return prevParams;
+    });
+  }
+
+  const displayedProjects = typeFilter
+    ? projects.filter((el) => el.projectTags.includes(typeFilter))
+    : projects;
+
+  const projectElements = displayedProjects.map((el) => (
     <div className="single-project-main-container">
       <div className="single-project-description-container">
         <h2>{el.projectName}</h2>
-
-        <img
-          className="single-project-image"
-          src={el.projectImage}
-          alt={el.projectName}
-        />
-
-        <p>{el.projectDescription}</p>
+        <a href={el.projectLink} target="_blank" rel="noreferrer">
+          <img
+            className="single-project-image"
+            src={el.projectImage}
+            alt={el.projectName}
+          />
+        </a>
+        <p className="single-project-description">{el.projectDescription}</p>
       </div>
       <div className="tag-main-container">
         {el.projectTags.map((tag) => (
@@ -57,11 +81,35 @@ export default function Projects() {
     </div>
   ));
 
-  console.log(projectElements);
-
   return (
     <div className="project-main-container">
-      <h1>Projects</h1>
+      <div className="project-main-filter-container">
+        <Link className="navi-backlink" to="..">
+          Back to Main Page
+        </Link>
+        <div className="project-filter-button-container">
+          <button
+            onClick={() => handleFilterChange("type", "react")}
+            className="project-filter-button"
+          >
+            react
+          </button>
+          <button
+            onClick={() => handleFilterChange("type", "vue")}
+            className="project-filter-button"
+          >
+            vue
+          </button>
+          {typeFilter ? (
+            <button
+              onClick={() => handleFilterChange("type", null)}
+              className="project-filter-button"
+            >
+              remove filter
+            </button>
+          ) : null}
+        </div>
+      </div>
       <div className="projects-container">{projectElements}</div>
     </div>
   );
