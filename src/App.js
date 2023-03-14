@@ -1,16 +1,20 @@
-import FontContainer from "./componentes/FontContainer";
-import SideBar from "./componentes/Sidebar";
-import BioBar from "./componentes/BioBar";
 import "./App.css";
-//import { BrowserRouter } from "react-router-dom";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./componentes/Layout";
+import Projects from "./pages/Projects";
+import Main from "./pages/Main";
 
 function App() {
   return (
-    <div className="main-container">
-      <FontContainer />
-      <BioBar />
-      <SideBar />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Main />} />
+          <Route path="projects" element={<Projects />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
