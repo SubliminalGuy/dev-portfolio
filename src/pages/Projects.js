@@ -1,4 +1,5 @@
 import { Link, useSearchParams } from "react-router-dom";
+import { projects } from "../helpers/projectData";
 
 export default function Projects() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -7,40 +8,7 @@ export default function Projects() {
 
   console.log("typeFilter", typeFilter);
 
-  const projects = [
-    {
-      projectId: "1",
-      projectName: "Crypto Dashboard",
-      projectDescription: "A multifunctional dashboard for crypto traders",
-      projectLink: "https://subguy-crypto-dashboard.netlify.app/",
-      projectImage: "../images/cryptodashboard.png",
-      projectTags: ["react", "chart.js"],
-    },
-    {
-      projectId: "2",
-      projectName: "Adults in the Zoom",
-      projectDescription: "A Svelte based Blog for political memoirs",
-      projectLink: "https://www.adults-in-the-zoom.de/",
-      projectImage: "..//images/a-in-the-zoom.png",
-      projectTags: ["svelte", "firebase"],
-    },
-    {
-      projectId: "3",
-      projectName: "Sopita de Letras",
-      projectDescription: "A simple letter soup game for spanish beginners",
-      projectLink: "https://sopitadeletras.netlify.app/",
-      projectImage: "..//images/sopitadeletras.png",
-      projectTags: ["vue"],
-    },
-    {
-      projectId: "4",
-      projectName: "Abecedario",
-      projectDescription: "A simple pronounciation guide for spanish beginners",
-      projectLink: "https://teresais-alfabeto.netlify.app/",
-      projectImage: "..//images/abecedario.png",
-      projectTags: ["vue"],
-    },
-  ];
+  
 
   function handleFilterChange(key, value) {
     console.log(searchParams);
@@ -59,18 +27,21 @@ export default function Projects() {
     : projects;
 
   const projectElements = displayedProjects.map((el) => (
-    <div className="single-project-main-container">
-      <div className="single-project-description-container">
+    <div className="project-main-container">
+      <Link className="project-link" to={el.projectId} state={{search: `?${searchParams.toString()}`, 
+                    type: typeFilter }}>
+      <div className="project-description-container">
         <h2>{el.projectName}</h2>
-        <a href={el.projectLink} target="_blank" rel="noreferrer">
+        
           <img
-            className="single-project-image"
+            className="project-image"
             src={el.projectImage}
             alt={el.projectName}
           />
-        </a>
-        <p className="single-project-description">{el.projectDescription}</p>
+        
+        <p className="project-description">{el.projectDescription}</p>
       </div>
+      </Link>
       <div className="tag-main-container">
         {el.projectTags.map((tag) => (
           <div className="tag-container">
@@ -82,28 +53,46 @@ export default function Projects() {
   ));
 
   return (
-    <div className="project-main-container">
-      <div className="project-main-filter-container">
+    <div className="projects-main-container">
+      <div className="projects-main-filter-container">
         <Link className="navi-backlink" to="..">
           Back to Main Page
         </Link>
-        <div className="project-filter-button-container">
+        <div className="projects-filter-button-container">
           <button
             onClick={() => handleFilterChange("type", "react")}
-            className="project-filter-button"
+            className={`projects-filter-button ${typeFilter === "react" ? "selected" : ""}`}
           >
             react
           </button>
           <button
-            onClick={() => handleFilterChange("type", "vue")}
-            className="project-filter-button"
+            onClick={() => handleFilterChange("type", "vue2")}
+            className={`projects-filter-button ${typeFilter === "vue2" ? "selected" : ""}`}
           >
-            vue
+            vue2
+          </button>
+          <button
+            onClick={() => handleFilterChange("type", "svelte")}
+            className={`projects-filter-button ${typeFilter === "svelte" ? "selected" : ""}`}
+          >
+            svelte
+          </button>
+          <button
+            onClick={() => handleFilterChange("type", "supabase")}
+            className={`projects-filter-button ${typeFilter === "supabase" ? "selected" : ""}`}
+          >
+            supabase
+          </button>
+          <button
+            onClick={() => handleFilterChange("type", "chart.js")}
+            className={`projects-filter-button ${typeFilter === "chart.js" ? "selected" : ""}`}
+          >
+            chart.js
           </button>
           {typeFilter ? (
             <button
               onClick={() => handleFilterChange("type", null)}
-              className="project-filter-button"
+              className="projects-filter-button"
             >
               remove filter
             </button>

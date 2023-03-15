@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./componentes/Layout";
 import Projects from "./pages/Projects";
+import Project from "./pages/Project";
 import Main from "./pages/Main";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Main />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="projects/:id" element={<Project />} />
         </Route>
       </Routes>
     </BrowserRouter>
