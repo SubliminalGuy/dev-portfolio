@@ -5,6 +5,12 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
+a {
+  color: black;
+  font-weight: bold;
+}
+
 .main-container {
   width: 100%;
   margin-top: 8vh;
@@ -50,6 +56,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .projects-filter-button-container {
@@ -62,7 +69,6 @@ body {
   border: black 2px solid;
   border-radius: 12px;
   padding: 4px 8px;
-  margin-top: 1rem;
   font-size: 0.9rem;
   font-weight: 800;
   background-color: white;
@@ -101,7 +107,7 @@ body {
 }
 
 .project-description {
-  margin: 10px 10px;
+  padding: 10px 20px;
 }
 
 .project-name {
@@ -114,8 +120,40 @@ body {
 .project-link {
   text-decoration: none;
   color: black;
-
 }
+
+.single-project-main-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.single-project-image-container {
+  border: black 2px solid;
+  width: 40%;
+}
+
+.single-project-description-container {
+  width: 45%;
+  padding: 0 2rem;
+}
+
+.single-project-image {
+  width: 100%;
+  height: 100%;
+}
+
+.single-project-description {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.single-project-details {
+  margin: 10px 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
 
 .tag-main-container {
   display: flex;
@@ -190,6 +228,30 @@ body {
 .sidebar-links:hover {
   font-size: 1.1rem;
   transition: 0.3s linear;
+}
+
+.about-box {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.about-heading-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.about-avatar {
+  width: 10vw;
+  margin-top: 2rem;
+  margin-top: 2rem;
+  border-radius: 140px;
+}
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  text-align: justify;
 }
 
 @media (max-width: 1000px) {

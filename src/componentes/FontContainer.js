@@ -10,7 +10,9 @@ export default function FontContainer() {
         <NavLink to="about" className="font-container-link">
           about
         </NavLink>
-        <NavLink className="font-container-link">contact</NavLink>
+        <NavLink to="contact" className="font-container-link">
+          contact
+        </NavLink>
       </div>
     </>
   );

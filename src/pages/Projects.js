@@ -6,10 +6,6 @@ export default function Projects() {
 
   const typeFilter = searchParams.get("type");
 
-  console.log("typeFilter", typeFilter);
-
-  
-
   function handleFilterChange(key, value) {
     console.log(searchParams);
     setSearchParams((prevParams) => {
@@ -28,19 +24,22 @@ export default function Projects() {
 
   const projectElements = displayedProjects.map((el) => (
     <div className="project-main-container">
-      <Link className="project-link" to={el.projectId} state={{search: `?${searchParams.toString()}`, 
-                    type: typeFilter }}>
-      <div className="project-description-container">
-        <h2>{el.projectName}</h2>
-        
+      <Link
+        className="project-link"
+        to={el.projectId}
+        state={{ search: `?${searchParams.toString()}`, type: typeFilter }}
+      >
+        <div className="project-description-container">
+          <h2>{el.projectName}</h2>
+
           <img
             className="project-image"
             src={el.projectImage}
             alt={el.projectName}
           />
-        
-        <p className="project-description">{el.projectDescription}</p>
-      </div>
+
+          <p className="project-description">{el.projectDescription}</p>
+        </div>
       </Link>
       <div className="tag-main-container">
         {el.projectTags.map((tag) => (
@@ -61,33 +60,59 @@ export default function Projects() {
         <div className="projects-filter-button-container">
           <button
             onClick={() => handleFilterChange("type", "react")}
-            className={`projects-filter-button ${typeFilter === "react" ? "selected" : ""}`}
+            className={`projects-filter-button ${
+              typeFilter === "react" ? "selected" : ""
+            }`}
           >
             react
           </button>
           <button
             onClick={() => handleFilterChange("type", "vue2")}
-            className={`projects-filter-button ${typeFilter === "vue2" ? "selected" : ""}`}
+            className={`projects-filter-button ${
+              typeFilter === "vue2" ? "selected" : ""
+            }`}
           >
             vue2
           </button>
           <button
             onClick={() => handleFilterChange("type", "svelte")}
-            className={`projects-filter-button ${typeFilter === "svelte" ? "selected" : ""}`}
+            className={`projects-filter-button ${
+              typeFilter === "svelte" ? "selected" : ""
+            }`}
           >
             svelte
           </button>
           <button
             onClick={() => handleFilterChange("type", "supabase")}
-            className={`projects-filter-button ${typeFilter === "supabase" ? "selected" : ""}`}
+            className={`projects-filter-button ${
+              typeFilter === "supabase" ? "selected" : ""
+            }`}
           >
             supabase
           </button>
           <button
             onClick={() => handleFilterChange("type", "chart.js")}
-            className={`projects-filter-button ${typeFilter === "chart.js" ? "selected" : ""}`}
+            className={`projects-filter-button ${
+              typeFilter === "chart.js" ? "selected" : ""
+            }`}
           >
             chart.js
+          </button>
+          <button
+            onClick={() => handleFilterChange("type", "extendScript")}
+            className={`projects-filter-button ${
+              typeFilter === "extendScript" ? "selected" : ""
+            }`}
+          >
+            extendScript
+          </button>
+          <button
+            onClick={() => handleFilterChange("type", "node.js")}
+            className={`projects-filter-button ${
+              typeFilter === "node.js" ? "selected" : ""
+            }`}
+          >
+            node.js
           </button>
           {typeFilter ? (
             <button
