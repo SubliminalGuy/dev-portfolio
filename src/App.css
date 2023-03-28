@@ -80,19 +80,21 @@ a {
 }
 
 .projects-container {
-  margin-top: 1rem;
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-around;
+  
 }
 
 .project-main-container {
+  
 }
 
 .project-description-container {
   border: black 2px solid;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,6 +119,7 @@ a {
   padding: 5px 10px;
 }
 
+
 .project-link {
   text-decoration: none;
   color: black;
@@ -131,6 +134,7 @@ a {
 .single-project-image-container {
   border: black 2px solid;
   width: 40%;
+  margin-top: 1rem;
 }
 
 .single-project-description-container {
@@ -282,13 +286,21 @@ a {
   .biobar-small-font {
     font-size: 0.8rem;
   }
+
+  .navi-backlink {
+    font-size: 1.5rem;
+  }
+
+  .projects-filter-button-container {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 750px) {
   .main-container {
     display: flex;
-    flex-direction: column;
-    margin-top: 0;
+    flex-direction: column; 
+    margin: 0;
   }
 
   .font-container {
@@ -305,11 +317,12 @@ a {
     transition: transform 300ms linear;
     margin: 0;
     margin-top: 50px;
+   
   }
 
   .biobar-container {
-    margin: 0 auto;
-    width: 80%;
+    margin: 5vh auto;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: space-around;
@@ -327,16 +340,13 @@ a {
 
   .sidebar-container {
     margin: 0 auto;
-    width: 90%;
     display: flex;
     flex-direction: row;
     max-height: 100px;
-    width: 100%;
+    width: 90%;
     align-items: center;
     justify-content: space-around;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    
   }
 
   .sidebar-links {
@@ -345,5 +355,84 @@ a {
 
   .projects-main-container {
     margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .projects-container {
+    width: 90%;
+  }
+
+  .project-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-main-filter-container {
+    flex-direction: column;
+    align-items: space-around;
+    margin-bottom: 2rem;
+  }
+
+  .projects-filter-button-container {
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+
+  .project-description-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .project-image {
+    width: 90%;
+  }
+
+  
+
+  .single-project-main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .single-project-description-container {
+    width: 80%;
+    padding: 0 2rem;
+    margin-top: 1rem;
+  }
+
+  .single-project-image-container {
+    width: 70%;
+  }
+ 
+  .about-box {
+    width: 80%;
+  }
+
+  .about-heading-box {
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  
+  .about-avatar {
+    width: 8vw;
+    border-radius: 80px;
+  }
+ 
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-align: justify;
+  }
+  
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
 }
