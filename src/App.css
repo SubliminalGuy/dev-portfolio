@@ -257,14 +257,11 @@ a {
 .about-heading-box {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   margin-bottom: 1rem;
 }
 
 .about-avatar {
   width: 10vw;
-  margin-top: 2rem;
-  margin-top: 2rem;
   border-radius: 140px;
 }
 .about-text {
@@ -420,12 +417,13 @@ a {
 
   .about-heading-box {
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
+    margin-top: 2rem;
   }
   
   .about-avatar {
-    width: 10vw;
-    border-radius: 80px;
+    width: 11vw;
+    border-radius: 50px;
   }
  
   .about-text {
