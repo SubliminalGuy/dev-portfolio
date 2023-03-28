@@ -18,7 +18,7 @@ export const projects = [
       "This was a contracted work by a german public television station. The objective was to integrate a third-party app into the postproduction workflow. <p>The third-party app provides a machine learning algorithm that returns short pre-edited video sequences given an input of low-resultion video files and a written text prompt.<p> My job was to create an easy workflow for editors in Adobe Premiere Pro. The workflow includes identification of the selected assets, optional rendering of low-res video files, uploading the files to the third-party server and providing JSON-data to the API.<p> The API calls back when the job is finished, triggering an automated import of AI-generated voiceover and editing data into Adobe Premiere.<p> The result is a high-resolution pre-edited video sequence with voice over. If further editing is required, feedback can be provided to the third-party app.",
     projectLink: "https://www.television.ai",
     projectImage: "..//images/tv-ai.png",
-    projectTags: ["extendScript", "premiere Pro"],
+    projectTags: ["extendScript"],
   },
   {
     projectId: "3",
@@ -35,7 +35,7 @@ export const projects = [
     projectName: "Sopita de Letras",
     projectDescription: "A simple letter soup game for spanish beginners",
     projectDetails:
-      "When my girlfriend was working as a spanish teacher in Berlin, i created some teeny-tiny apps for her. This one is a classic word soup that includes the spanish names for eight color. <p>Like the <strong>Abecedario</strong> it's a simple app, but i had fun creating it and the children liked it.<p> The app is written in <strong>Vue2</strong>. If you want to clone the repository and play around with it on your machine, it can be found on <a href='https://gitlab.com/subliminal_guy/sopita-de-letras' target='_blank'>Gitlab</a>. ",
+      "When my girlfriend was working as a spanish teacher in Berlin, i created some teeny-tiny apps for her. This one is a classic word soup that includes the spanish names for eight colors. <p>Like the <strong>Abecedario</strong> it's a simple app, but i had fun creating it and the children liked it.<p> The app is written in <strong>Vue2</strong>. If you want to clone the repository and play around with it on your machine, it can be found on <a href='https://gitlab.com/subliminal_guy/sopita-de-letras' target='_blank'>Gitlab</a>. ",
     projectLink: "https://sopitadeletras.netlify.app/",
     projectImage: "..//images/sopitadeletras.png",
     projectTags: ["vue2"],
@@ -45,7 +45,7 @@ export const projects = [
     projectName: "Abecedario",
     projectDescription: "A simple pronounciation guide for spanish beginners",
     projectDetails:
-      "When my girlfriend was working as a spanish teacher in Berlin, i created some teeny-tiny apps for her. This one teaches beginners to pronounce the spanish alphabet, which has quite a few pecularities. It's a simple app, but it was a great learning experience for me.<p> What may appear complicated is in fact really easy. I learned the basics in Wes Bos's wonderful Vanilla JS course <a href='https://javascript30.com/' target='_blank'>JavaScript30</a>. With only a few lines of code you can use the <a href='https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance' target='_blank'>SpeechSynthesis Constructor</a> by MDN Web Docs.<p> The app is written in <strong>Vue2</strong>. A detailed descriptions of its components can be found <a href='https://devblog.codebabbler.org/abecedario-espanol/' target='_blank'>here</a>. If you want to clone the repository and play around with it on your machine, it can be found on <a href='https://gitlab.com/subliminal_guy/abecedario' target='_blank'>Gitlab</a>.",
+      "When my girlfriend was working as a spanish teacher in Berlin, i created some teeny-tiny apps for her. This one teaches beginners to pronounce the spanish alphabet, which has quite a few pecularities. It's a simple app, but it was a great learning experience for me.<p> What may appear complicated is in fact really easy. I learned the basics in Wes Bos's wonderful Vanilla JS course <a href='https://javascript30.com/' target='_blank'>JavaScript30</a>. With only a few lines of code you can use the <a href='https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance' target='_blank'>SpeechSynthesis Constructor</a>.<p> The app is written in <strong>Vue2</strong>. A detailed descriptions of its components can be found <a href='https://devblog.codebabbler.org/abecedario-espanol/' target='_blank'>here</a>. If you want to clone the repository and play around with it on your machine, it can be found on <a href='https://gitlab.com/subliminal_guy/abecedario' target='_blank'>Gitlab</a>.",
     projectLink: "https://teresais-alfabeto.netlify.app/",
     projectImage: "..//images/abecedario.png",
     projectTags: ["vue2"],
