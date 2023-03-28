@@ -24,13 +24,21 @@ export default function About() {
         </p>
         <p className="about-text">
           I worked for every major tv-station in Germany, still occasionally on
-          premise, and i do freelance remote work for a public broadcaster (e.g.{" "}
-          <a href="/projects/2">AI integration</a>). So i guess i'm somewhat a
-          digital nomad 😉{" "}
+          premise, and i do freelance remote work for a public broadcaster. So i
+          guess i'm somewhat a digital nomad 😉{" "}
         </p>
         <p className="about-text">
           My professional experiences include video production, content
-          development, live tv production and editing.{" "}
+          development, live tv production and editing. I wrote and directed
+          three documentaries on{" "}
+          <a
+            href="https://collageculturel.realvinylz.net/episodes.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            contemporary art and remixing
+          </a>
+          .
         </p>
         <p className="about-text">
           <strong>In late 2017</strong> i rediscovered my fascination for

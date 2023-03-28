@@ -13,7 +13,7 @@ a {
 
 .main-container {
   width: 100%;
-  margin-top: 8vh;
+  margin-top: 6vh;
   display: grid;
   grid-template-rows: 100px 8fr 1fr;
   grid-template-columns: 100px 8fr 8fr 1fr;
@@ -233,6 +233,21 @@ a {
 .about-box {
   margin: 0 auto;
   width: 60%;
+}
+
+.contact-box {
+  margin: 5rem auto;
+  width: 60%;
+}
+
+.link-box {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.attribution {
+  font-size: 0.6rem;
 }
 
 .about-heading-box {
