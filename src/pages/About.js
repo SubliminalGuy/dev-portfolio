@@ -44,8 +44,8 @@ export default function About() {
           <strong>In late 2017</strong> i rediscovered my fascination for
           programming and web development. I bootcamped in Responsive Web
           Design, React, Vue and Svelte and developed{" "}
-          <a href="/projects">dozens of applications</a> for fun, training, and
-          professional purposes.
+          <Link to="/projects">dozens of applications</Link> for fun, training,
+          and professional purposes.
         </p>
         <p className="about-text">
           I'm looking for a React Developer role, full-time, part-time or as a
