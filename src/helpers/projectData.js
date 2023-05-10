@@ -1,6 +1,16 @@
 export const projects = [
   {
     projectId: "1",
+    projectName: "Wake On Lan",
+    projectDescription: "A fullstack application to wake up computers remotely",
+    projectDetails:
+      "Another contracted work by a german public television station. The purpose was to provide a fullstack app to keep track of, wake-up and safely shut-down all production servers in the local studio. The users, user groups and server data are kept in MariaDB and the Express-Server is responsible for handling the requests coming from the frontend.<p>For the React frontend I leaned heavily on the great UI/UX-components provided by <a href='https://www.radix-ui.com/' target='_blank'>Radix</a>. It made adding new dialogs, icons, search bars and dropdowns a no-brainer, so i could craft out the main app within three days. Of course the last 10% will take 90% of the time ... ",
+    projectLink: "https://zdf.de/",
+    projectImage: "../images/wake-on-lan.png",
+    projectTags: ["react", "node.js", "mariaDB"],
+  },
+  {
+    projectId: "2",
     projectName: "Crypto Dashboard",
     projectDescription: "A multifunctional dashboard for crypto traders",
     projectDetails:
@@ -10,7 +20,7 @@ export const projects = [
     projectTags: ["react", "chart.js"],
   },
   {
-    projectId: "2",
+    projectId: "3",
     projectName: "Television AI",
     projectDescription:
       "An AI video editing integration for Adobe Premiere Pro",
@@ -21,7 +31,7 @@ export const projects = [
     projectTags: ["extendScript"],
   },
   {
-    projectId: "3",
+    projectId: "4",
     projectName: "Adults in the Zoom",
     projectDescription: "A Svelte based Blog for political memoirs",
     projectDetails:
@@ -31,7 +41,7 @@ export const projects = [
     projectTags: ["svelte", "supabase"],
   },
   {
-    projectId: "4",
+    projectId: "5",
     projectName: "Sopita de Letras",
     projectDescription: "A simple letter soup game for spanish beginners",
     projectDetails:
@@ -41,7 +51,7 @@ export const projects = [
     projectTags: ["vue2"],
   },
   {
-    projectId: "5",
+    projectId: "6",
     projectName: "Abecedario",
     projectDescription: "A simple pronounciation guide for spanish beginners",
     projectDetails:
@@ -51,7 +61,7 @@ export const projects = [
     projectTags: ["vue2"],
   },
   {
-    projectId: "6",
+    projectId: "7",
     projectName: "SubGuy's Recordshop",
     projectDescription: "My first serious take on Node.js",
     projectDetails:

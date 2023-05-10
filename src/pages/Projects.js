@@ -23,7 +23,7 @@ export default function Projects() {
     : projects;
 
   const projectElements = displayedProjects.map((el) => (
-    <div className="project-main-container">
+    <div className="project-main-container" key={el.projectId}>
       <Link
         className="project-link"
         to={el.projectId}

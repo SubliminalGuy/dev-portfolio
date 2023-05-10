@@ -85,11 +85,9 @@ a {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-around;
-  
 }
 
 .project-main-container {
-  
 }
 
 .project-description-container {
@@ -119,7 +117,6 @@ a {
   padding: 5px 10px;
 }
 
-
 .project-link {
   text-decoration: none;
   color: black;
@@ -132,9 +129,9 @@ a {
 }
 
 .single-project-image-container {
-  border: black 2px solid;
   width: 40%;
   margin-top: 1rem;
+  padding-bottom: 10%;
 }
 
 .single-project-description-container {
@@ -144,7 +141,6 @@ a {
 
 .single-project-image {
   width: 100%;
-  height: 100%;
 }
 
 .single-project-description {
@@ -157,7 +153,6 @@ a {
   text-align: justify;
   line-height: 1.5;
 }
-
 
 .tag-main-container {
   display: flex;
@@ -284,19 +279,15 @@ a {
     font-size: 0.8rem;
   }
 
-  .navi-backlink {
-    font-size: 1.4rem;
-  }
-
   .projects-filter-button-container {
     flex-wrap: wrap;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .main-container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     margin: 0;
   }
 
@@ -314,7 +305,6 @@ a {
     transition: transform 300ms linear;
     margin: 0;
     margin-top: 50px;
-   
   }
 
   .biobar-container {
@@ -335,6 +325,10 @@ a {
     font-size: 1.1rem;
   }
 
+  .navi-backlink {
+    font-size: 1.4rem;
+  }
+
   .sidebar-container {
     margin: 0 auto;
     display: flex;
@@ -343,7 +337,6 @@ a {
     width: 90%;
     align-items: center;
     justify-content: space-around;
-    
   }
 
   .sidebar-links {
@@ -380,17 +373,14 @@ a {
     margin-top: 1rem;
   }
 
-
   .project-description-container {
     width: 80%;
     margin: 0 auto;
   }
-  
+
   .project-image {
     width: 90%;
   }
-
-  
 
   .single-project-main-container {
     flex-direction: column;
@@ -406,7 +396,7 @@ a {
   .single-project-image-container {
     width: 70%;
   }
- 
+
   .about-box {
     width: 80%;
   }
@@ -420,21 +410,19 @@ a {
     align-items: center;
     margin-top: 2rem;
   }
-  
+
   .about-avatar {
     width: 11vw;
     border-radius: 50px;
   }
- 
+
   .about-text {
     font-size: 1rem;
     line-height: 1.3rem;
     text-align: justify;
   }
-  
 
   h1 {
     font-size: 1.6rem;
   }
-
 }
