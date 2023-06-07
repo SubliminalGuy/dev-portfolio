@@ -17,7 +17,7 @@ export default function Projects() {
       return prevParams;
     });
   }
-
+  // filters the displayed projects based on the typeFilter
   const displayedProjects = typeFilter
     ? projects.filter((el) => el.projectTags.includes(typeFilter))
     : projects;

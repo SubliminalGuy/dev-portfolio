@@ -10,13 +10,8 @@ export default function SideBar() {
         >
           mastodon
         </a>
-        <a
-          href="https://twitter.com/SubKid/"
-          target="_blank"
-          rel="noreferrer"
-          className="sidebar-links"
-        >
-          twitter
+        <a href="/" rel="noreferrer" className="sidebar-links red">
+          <s>twitter</s>
         </a>
         <a
           href="https://github.com/SubliminalGuy"

@@ -265,6 +265,10 @@ a {
   text-align: justify;
 }
 
+.red {
+  color: red;
+}
+
 @media (max-width: 1000px) {
   .font-container-link {
     font-size: 6rem;
