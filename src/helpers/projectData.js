@@ -66,7 +66,7 @@ export const projects = [
     projectDescription: "My first serious take on Node.js",
     projectDetails:
       "Currently i'm not a full-stack-developer, but i'm working on it. This is my first serious take on <strong>Node.js</strong> and <strong>Express</strong>, using pug as a template engine. It's a simple record store with a <strong>MongoDB</strong> database attached. <p> To be completely honest i was so busy with writing all the models, controllers and views, that i didn't spend much time on the design part. So the site is not beautiful, but it felt like an achievement to wrap my hand around a backend framework.",
-    projectLink: "https://node-record-store.subliminalguy.repl.co/store",
+    projectLink: "https://node-record-store-subliminalguy.replit.app/store",
     projectImage: "..//images/node-recordshop.png",
     projectTags: ["node.js", "express", "mongoDB"],
   },
