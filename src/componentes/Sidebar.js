@@ -3,15 +3,20 @@ export default function SideBar() {
     <>
       <div className="sidebar-container">
         <a
-          href="https://mastodon.sdf.org/@subliminal_guy"
+          href="https://firefish.social/@subguy"
           target="_blank"
           rel="noreferrer"
           className="sidebar-links"
         >
-          mastodon
+          firefish
         </a>
-        <a href="/" rel="noreferrer" className="sidebar-links red">
-          <s>twitter</s>
+        <a
+          href="https://bsky.app/profile/subguy.bsky.social"
+          target="_blank"
+          rel="noreferrer"
+          className="sidebar-links"
+        >
+          bluesky
         </a>
         <a
           href="https://github.com/SubliminalGuy"
