@@ -69,7 +69,7 @@ a {
   border: black 2px solid;
   border-radius: 12px;
   padding: 4px 8px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 800;
   background-color: white;
 }
@@ -173,7 +173,7 @@ a {
 }
 
 .project-tag {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 800;
 }
 
@@ -269,7 +269,7 @@ a {
   color: red;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .font-container-link {
     font-size: 6rem;
   }
@@ -285,10 +285,11 @@ a {
 
   .projects-filter-button-container {
     flex-wrap: wrap;
+    width: 70%;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .main-container {
     display: flex;
     flex-direction: column;
@@ -372,7 +373,7 @@ a {
 
   .projects-filter-button-container {
     flex-direction: row;
-    width: 80%;
+    width: 60%;
     flex-wrap: wrap;
     margin-top: 1rem;
   }

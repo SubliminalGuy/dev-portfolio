@@ -1,6 +1,18 @@
 export const projects = [
   {
     projectId: "1",
+    projectName: "Premiere Protools Workflow",
+    projectDescription:
+      "A fullstack app to integrate the audio dubbing workflow at RBB Berlin.",
+    projectDetails:
+      "With this App it is possible to send an sequence edited in Adobe Premiere Pro to Protools Audio Postproduction and back, with no more than two mouse clicks. <p>The app components (front- and backend) run in two separate docker container. Backend Stack is MSSQL, Express and Node.js. Frontend Stack is React with Radix UI components.  There is also a project status overview page, where admins can delete finished projects.",
+
+    projectLink: "https://rbb24.de/",
+    projectImage: "../images/protools-page.jpg",
+    projectTags: ["react", "node.js", "mssql"],
+  },
+  {
+    projectId: "2",
     projectName: "Wake On Lan",
     projectDescription: "A fullstack application to wake up computers remotely",
     projectDetails:
@@ -10,7 +22,7 @@ export const projects = [
     projectTags: ["react", "node.js", "mariaDB"],
   },
   {
-    projectId: "2",
+    projectId: "3",
     projectName: "Crypto Dashboard",
     projectDescription: "A multifunctional dashboard for crypto traders",
     projectDetails:
@@ -20,7 +32,7 @@ export const projects = [
     projectTags: ["react", "chart.js"],
   },
   {
-    projectId: "3",
+    projectId: "4",
     projectName: "Television AI",
     projectDescription:
       "An AI video editing integration for Adobe Premiere Pro",
@@ -31,7 +43,7 @@ export const projects = [
     projectTags: ["extendScript"],
   },
   {
-    projectId: "4",
+    projectId: "5",
     projectName: "Adults in the Zoom",
     projectDescription: "A Svelte based Blog for political memoirs",
     projectDetails:
@@ -41,7 +53,7 @@ export const projects = [
     projectTags: ["svelte", "supabase"],
   },
   {
-    projectId: "5",
+    projectId: "6",
     projectName: "Sopita de Letras",
     projectDescription: "A simple letter soup game for spanish beginners",
     projectDetails:
@@ -51,7 +63,7 @@ export const projects = [
     projectTags: ["vue2"],
   },
   {
-    projectId: "6",
+    projectId: "7",
     projectName: "Abecedario",
     projectDescription: "A simple pronounciation guide for spanish beginners",
     projectDetails:
@@ -61,13 +73,13 @@ export const projects = [
     projectTags: ["vue2"],
   },
   {
-    projectId: "7",
+    projectId: "8",
     projectName: "SubGuy's Recordshop",
     projectDescription: "My first serious take on Node.js",
     projectDetails:
       "Currently i'm not a full-stack-developer, but i'm working on it. This is my first serious take on <strong>Node.js</strong> and <strong>Express</strong>, using pug as a template engine. It's a simple record store with a <strong>MongoDB</strong> database attached. <p> To be completely honest i was so busy with writing all the models, controllers and views, that i didn't spend much time on the design part. So the site is not beautiful, but it felt like an achievement to wrap my hand around a backend framework.",
     projectLink: "https://node-record-store-subliminalguy.replit.app/store",
     projectImage: "..//images/node-recordshop.png",
-    projectTags: ["node.js", "express", "mongoDB"],
+    projectTags: ["node.js", "mongoDB"],
   },
 ];

@@ -24,8 +24,8 @@ export default function About() {
         </p>
         <p className="about-text">
           I worked for every major tv-station in Germany, still occasionally on
-          premise, and i do freelance remote work for a public broadcaster. So i
-          guess i'm somewhat a digital nomad 😉{" "}
+          premise, and i do freelance remote work for two public broadcasting
+          companies.
         </p>
         <p className="about-text">
           My professional experiences include video production, content

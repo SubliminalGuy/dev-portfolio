@@ -91,6 +91,30 @@ export default function Projects() {
             supabase
           </button>
           <button
+            onClick={() => handleFilterChange("type", "mariaDB")}
+            className={`projects-filter-button ${
+              typeFilter === "mariaDB" ? "selected" : ""
+            }`}
+          >
+            mariaDB
+          </button>
+          <button
+            onClick={() => handleFilterChange("type", "mongoDB")}
+            className={`projects-filter-button ${
+              typeFilter === "mongoDB" ? "selected" : ""
+            }`}
+          >
+            mongoDB
+          </button>
+          <button
+            onClick={() => handleFilterChange("type", "mssql")}
+            className={`projects-filter-button ${
+              typeFilter === "mssql" ? "selected" : ""
+            }`}
+          >
+            mssql
+          </button>
+          <button
             onClick={() => handleFilterChange("type", "chart.js")}
             className={`projects-filter-button ${
               typeFilter === "chart.js" ? "selected" : ""
