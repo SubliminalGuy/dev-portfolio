@@ -3,14 +3,6 @@ export default function SideBar() {
     <>
       <div className="sidebar-container">
         <a
-          href="https://firefish.social/@subguy"
-          target="_blank"
-          rel="noreferrer"
-          className="sidebar-links"
-        >
-          firefish
-        </a>
-        <a
           href="https://bsky.app/profile/subguy.bsky.social"
           target="_blank"
           rel="noreferrer"
