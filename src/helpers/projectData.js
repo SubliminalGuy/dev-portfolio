@@ -1,6 +1,17 @@
 export const projects = [
   {
     projectId: "1",
+    projectName: "After Effects WebInterface",
+    projectDescription: "A WebInterface for Adobe After Effects.",
+    projectDetails:
+      "I conducted this project with students from the TU Berlin. With the data-driven render automation <a href='https://github.com/inlife/nexrender' target='_blank'>Nexrender</a> under the hood we developed an easy-to-use web interface for journalists.<p> With the help of a <a href='https://lottiefiles.com' target='_blank' >Lottiefile</a> we generated a preview of the After Effects Animation that updates automatically. The user can then download a job.json to feed into the <strong>Nexrender CLI</strong> or send a http-request to our backend service.",
+
+    projectLink: "https://rbb24.de/",
+    projectImage: "../images/nexrenderapp.png",
+    projectTags: ["vue2"],
+  },
+  {
+    projectId: "2",
     projectName: "Premiere Protools Workflow",
     projectDescription:
       "A fullstack app to integrate the audio dubbing workflow at RBB Berlin.",
@@ -12,7 +23,7 @@ export const projects = [
     projectTags: ["react", "node.js", "mssql"],
   },
   {
-    projectId: "2",
+    projectId: "3",
     projectName: "Wake On Lan",
     projectDescription: "A fullstack application to wake up computers remotely",
     projectDetails:
@@ -22,7 +33,7 @@ export const projects = [
     projectTags: ["react", "node.js", "mariaDB"],
   },
   {
-    projectId: "3",
+    projectId: "4",
     projectName: "Crypto Dashboard",
     projectDescription: "A multifunctional dashboard for crypto traders",
     projectDetails:
@@ -32,7 +43,7 @@ export const projects = [
     projectTags: ["react", "chart.js"],
   },
   {
-    projectId: "4",
+    projectId: "5",
     projectName: "Television AI",
     projectDescription:
       "An AI video editing integration for Adobe Premiere Pro",
@@ -43,7 +54,7 @@ export const projects = [
     projectTags: ["extendScript"],
   },
   {
-    projectId: "5",
+    projectId: "6",
     projectName: "Adults in the Zoom",
     projectDescription: "A Svelte based Blog for political memoirs",
     projectDetails:
@@ -53,7 +64,7 @@ export const projects = [
     projectTags: ["svelte", "supabase"],
   },
   {
-    projectId: "6",
+    projectId: "7",
     projectName: "Sopita de Letras",
     projectDescription: "A simple letter soup game for spanish beginners",
     projectDetails:
@@ -63,7 +74,7 @@ export const projects = [
     projectTags: ["vue2"],
   },
   {
-    projectId: "7",
+    projectId: "8",
     projectName: "Abecedario",
     projectDescription: "A simple pronounciation guide for spanish beginners",
     projectDetails:
@@ -73,7 +84,7 @@ export const projects = [
     projectTags: ["vue2"],
   },
   {
-    projectId: "8",
+    projectId: "9",
     projectName: "SubGuy's Recordshop",
     projectDescription: "My first serious take on Node.js",
     projectDetails:
