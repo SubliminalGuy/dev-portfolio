@@ -12,29 +12,38 @@ export default function Project() {
   const type = location.state?.type || "";
 
   return (
-    <div className="projects-main-container">
-      <div className="projects-main-filter-container">
-        <Link className="navi-backlink" to={`..${search}`} relative="path">
+    <div className="px-4 py-6 lg:row-start-2 lg:col-start-2 lg:col-span-2 lg:px-8">
+      <div className="mb-8">
+        <Link 
+          className="text-black font-bold hover:text-blue-600 transition-colors duration-200" 
+          to={`..${search}`} 
+          relative="path"
+        >
           Back to {capitalizeFirstLetter(type)} Projects
         </Link>
       </div>
-      <div className="single-project-main-container">
-        <div className="single-project-image-container">
-          <a href={el.projectLink} target="_blank" rel="noreferrer">
+      <div className="bg-white rounded-lg shadow-md p-4 lg:p-8">
+        <div className="mb-6 lg:mb-8">
+          <a 
+            href={el.projectLink} 
+            target="_blank" 
+            rel="noreferrer"
+            className="block hover:opacity-90 transition-opacity"
+          >
             <img
-              className="single-project-image"
+              className="w-full h-auto rounded-lg shadow-md"
               src={el.projectImage}
               alt={el.projectName}
             />
           </a>
         </div>
-        <div className="single-project-description-container">
-          <h1>{el.projectName}</h1>
-          <p className="single-project-description">{el.projectDescription}</p>
-          <p
-            className="single-project-details"
+        <div className="space-y-4 lg:space-y-6">
+          <h1 className="text-2xl lg:text-3xl font-bold">{el.projectName}</h1>
+          <p className="text-base lg:text-lg text-gray-700">{el.projectDescription}</p>
+          <div
+            className="text-gray-700 prose prose-sm lg:prose-base prose-blue max-w-none"
             dangerouslySetInnerHTML={{ __html: el.projectDetails }}
-          ></p>
+          ></div>
         </div>
       </div>
     </div>
